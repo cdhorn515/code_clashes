@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class sudoku {
-    
+
     public static void Sudoku(String[] args) {
 
         System.out.println("This program lets you know any numbers that are missing between 0-9. Please enter a " +
