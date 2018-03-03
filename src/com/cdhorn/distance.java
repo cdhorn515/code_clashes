@@ -20,13 +20,13 @@ import java.util.*;
  tree 1.0
  mountain 2.0
  person 0.5
- Output
+ Output - should be greatest to smallest
  mountain tree person
  */
 
- class distance_to_camera {
+ class distance {
     public static void main(String args[]) {
-        System.out.println("Enter an integer, and that many items with a decimal number between 0.0 and 100.0: ");
+        System.out.println("Enter an integer, and that many items along with a decimal number between 0.0 and 100.0: ");
         Scanner in = new Scanner(System.in);
         int N = in.nextInt();
         HashMap<Float, String> myMap = new HashMap();
@@ -39,7 +39,7 @@ import java.util.*;
         }
 
         Collections.sort(miles, Collections.reverseOrder());
-
+//        could also just sort() and then loop through with (int i = N-1; i>=0; i--)
         for (int i = 0; i < N; i++) {
             float getFloat = miles.get(i);
             System.out.print(myMap.get(getFloat) + " ");
